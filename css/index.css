@@ -1,0 +1,36 @@
+/*////////   GERAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    font: roboto, sans serife;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*////////   BARRA DE NAVEGAÇÃO*/
+
+
+.navbar {
+    background: #1E1E1E;
+}
+
+.navbar-collapse {
+    background: #1E1E1E;
+    height: 130px;
+    text-transform: uppercase;
+}
+
+
+.navbar-collapse li a {
+    color: #FEF9FF;
+}
+
+.navbar-collapse li a:hover {
+    color: #00335C;
+    font-weight: bold;
+}
