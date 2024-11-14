@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font: roboto, sans serife;
+    font-family: "Funnel Display", sans-serif;
 }
 
 
@@ -11,6 +11,23 @@ a:hover {
     text-decoration: none;
 }
 
+body {
+    background: url(../img/bg.png) no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Unbounded", sans-serif;
+}
+
+h2 {
+    font-family: "Unbounded", sans-serif;
+}
+
+.titulos {
+    font-family: "Unbounded", sans-serif;
+    text-transform: uppercase;
+}
 
 /*////////   BARRA DE NAVEGAÇÃO*/
 
@@ -18,6 +35,17 @@ a:hover {
 .navbar {
     background: #1E1E1E;
 }
+
+.nav-link {
+    color: #00FFF0;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #D9D9D9;
+    font-weight: bold;
+}
+
 
 .navbar-collapse {
     background: #1E1E1E;
@@ -33,4 +61,64 @@ a:hover {
 .navbar-collapse li a:hover {
     color: #00335C;
     font-weight: bold;
+}
+
+
+/* SESSÃO BANNERS */
+
+#banners {
+    height: 500px;
+    margin-top: 65px;
+    background: url(../img/exemploBanner.png) no-repeat;
+    background-size: cover;
+}
+
+/* RODAPÉ */
+
+#rodape {
+    background: #008282;
+    padding: 20px 0;
+}
+
+#rodape .nav-link{
+    color: #1E1E1E;
+}
+
+#rodape .nav-link:hover {
+    color: #D9D9D9;
+    font-weight: bold;
+}
+
+#rodape h2 {
+    text-transform: uppercase;
+    color: #1E1E1E;
+}
+
+#logo-rodape {
+    background: #1E1E1E;
+    border: red 1px solid;
+    margin-top: 10px;
+}
+
+/* SESSÃO SERVIÇOS */
+#servicos {
+    padding: 30px 0;
+}
+
+/* SESSÃO SOBRE */
+
+.foto {
+    background: #008282;
+}
+
+.sobre {
+    background: #00FFF0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+/* SESSÃO PROJETOS */
+#projetos {
+    padding: 30px 0;
 }
