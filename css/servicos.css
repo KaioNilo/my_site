@@ -34,17 +34,9 @@
 }
 
 
-/* SESSÃO BANNERS */
-
-#banners {
-    height: 550px;
-    margin-top: 65px;
-    background: url(../img/exemploBanner.png) no-repeat;
-    background-size: cover;
-}
-
 
 /* SESSÃO SERVIÇOS */
+
 #servicos {
     padding: 30px 0;
 }
@@ -53,11 +45,14 @@
     text-align: center;
 }
 
+#servicos .row {
+    margin-bottom: 30px;
+}
+
 #servicos .row img {
     border: #008282 10px solid;
     box-shadow: 3px 3px 10px #008282;
 }
-
 
 #servicos .row .botao{
     background: url(../img/button-more.png) no-repeat center;
@@ -65,65 +60,21 @@
 }
 
 
-/* SESSÃO SOBRE */
-
-#sobre {
-    background: #00FFF0;
-}
-
-.foto {
-    background: #008282;
-}
-
-.sobre {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-
-
-/* SESSÃO PROJETOS */
-#projetos {
-    padding: 30px 0;
-}
-
-#projetos .titulos{
-    text-align: center;
-}
-
-#projetos .row img {
-    border: #008282 10px solid;
-    box-shadow: 3px 3px 10px #008282;
-}
-
-#projetos .row .botao{
-    background: url(../img/button-more.png) no-repeat center;
-    border: none;
-}
-
-
-
 /* RODAPÉ */
-
 #rodape {
     background: #008282;
-    padding-top: 20px;
+    padding-top: 10px;
+}
+
+#rodape .container ul{
+    justify-self: center;
 }
 
 #rodape .nav-item .nav-link{
     color: #D9D9D9;
-    margin: 5px 0px;
+    margin: 5px 10px;
 }
 
-#rodape .nav-link:hover {
-    color: #D9D9D9;
-    font-weight: bold;
-}
-
-#rodape h2 {
-    text-transform: uppercase;
-    color: #D9D9D9;
-}
 
 #rodape .titulos {
     color: #D9D9D9;

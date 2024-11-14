@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font: Unbounded;
+    font-family: "Funnel Display", sans-serif;
 }
 
 body {
@@ -11,6 +11,19 @@ body {
     background-size: cover;
 }
 
+h1 {
+    font-family: "Unbounded", sans-serif;
+}
+
+h2 {
+    font-family: "Unbounded", sans-serif;
+}
+
+.titulos {
+    font-family: "Unbounded", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
 
 a:hover {
     text-decoration: none;
