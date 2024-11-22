@@ -1,88 +1,142 @@
-
-/*////////   BARRA DE NAVEGAÇÃO*/
-
-
-.navbar {
-    background: #1E1E1E;
-}
-
-.nav-link {
-    color: #00FFF0;
-    text-transform: uppercase;
-}
-
-.nav-link:hover {
-    color: #D9D9D9;
-    font-weight: bold;
-}
-
-
-.navbar-collapse {
-    background: #1E1E1E;
-    height: 130px;
-    text-transform: uppercase;
-}
-
-
-.navbar-collapse li a {
-    color: #FEF9FF;
-}
-
-.navbar-collapse li a:hover {
-    color: #00335C;
-    font-weight: bold;
-}
-
-
-
+/*//////
 /* SESSÃO SERVIÇOS */
 
 #servicos {
-    padding: 30px 0;
-}
-
-#servicos .titulos{
     text-align: center;
-}
-
-#servicos .row {
-    margin-bottom: 30px;
-}
-
-#servicos .row img {
-    border: #008282 10px solid;
-    box-shadow: 3px 3px 10px #008282;
-}
-
-#servicos .row .botao{
-    background: url(../img/button-more.png) no-repeat center;
-    border: none;
+    justify-items: center;
+    color: #00FFF0;
+    margin: 7em 0;
+    box-shadow: 2px 2px 50px 1px #0e0e0e;
 }
 
 
-/* RODAPÉ */
-#rodape {
-    background: #008282;
-    padding-top: 10px;
+.container-itens {
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas: "card card";
+    grid-gap: 5em;
+    margin: 4em 0;
 }
 
-#rodape .container ul{
-    justify-self: center;
+.card {
+    background: url(../img/crua.png) no-repeat center;
+    background-size: cover;
+    color: #00FFF0;
+    grid-area: "card";
+    width: 450px;
+    height: 250px;
+    border-radius: 0.5em;
+    border: #0e0e0e 1.5px solid;
+    box-shadow: 0.3px 0.3px 15px 1px #008282;
 }
 
-#rodape .nav-item .nav-link{
-    color: #D9D9D9;
-    margin: 5px 10px;
+.card a {
+    background-color: #0e0e0e;
+    opacity: 0.7;
+    border-radius: 1em;
+    padding: 0.3em 1em;
+}
+
+.card-img-overlay{
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: end;
 }
 
 
-#rodape .titulos {
-    color: #D9D9D9;
+
+
+/*//////
+/* SESSÃO ISCA */
+
+#isca {
+    align-items: center;
+    color: #00FFF0;
+    margin: 7em 0;
 }
 
-.logo-rodape {
-    text-align: center;
-    background: #1E1E1E;
-    padding: 20px 0px;
-    margin-top: 10px;
+#isca .container {
+    display: grid;
+    grid-template-areas: "text-isca imgs-isca";
+    background: url(../img/bg-isca.png) no-repeat center;
+    background-size: cover;
+    height: 300px;
+    padding: 2em 3em;
+    border-radius: 10px;    
+    border: 2px solid #00FFF0;
+    box-shadow: 0.3px 0.3px 15px 1px #00FFF0;
+}
+
+#isca .container .text-isca {
+    grid-area: "text-isca";
+    align-self: center;
+}
+
+#isca .container .imgs-isca {
+    grid-area: "imgs-isca";
+    align-self: center;
+}
+
+#isca .container img {
+    grid-area: "imgs-isca";
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+
+
+
+@media (max-width: 1200px) { 
+  
+    #isca .container {
+        display: grid;
+        grid-template-areas: 
+        "text-isca"
+        "imgs-isca";
+        height: 550px;
+        text-align: center;   
+    }
+
+    #isca .container .text-isca {
+        grid-area: "text-isca";
+        margin-bottom: 2em;
+    }
+
+    #isca .container .imgs-isca {
+        grid-area: "imgs-isca";
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 767.999px) { 
+  
+
+    #isca .container {
+        display: grid;
+        grid-template-areas: 
+        "text-isca"
+        "imgs-isca";
+        height: 630px;
+        width: 700px;
+        padding: 2em;
+        justify-content: center;
+    }
+
+    #isca .container .text-isca {
+        grid-area: "text-isca";
+        margin: 1em 6em 2em 6em;
+    }
+
+    #isca .container .imgs-isca {
+        grid-area: "imgs-isca";
+        grid-gap: 2em;
+    }
+
+    #isca .container img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
 }

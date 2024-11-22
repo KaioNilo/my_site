@@ -1,137 +1,198 @@
-
-/*////////   BARRA DE NAVEGAÇÃO*/
-
-
-.navbar {
-    background: #1E1E1E;
-}
-
-.nav-link {
-    color: #00FFF0;
-    text-transform: uppercase;
-}
-
-.nav-link:hover {
-    color: #D9D9D9;
-    font-weight: bold;
-}
-
-
-.navbar-collapse {
-    background: #1E1E1E;
-    height: 130px;
-    text-transform: uppercase;
-}
-
-
-.navbar-collapse li a {
-    color: #FEF9FF;
-}
-
-.navbar-collapse li a:hover {
-    color: #00335C;
-    font-weight: bold;
-}
-
-
 /* SESSÃO BANNERS */
 
 #banners {
     height: 550px;
     margin-top: 65px;
-    background: url(../img/exemploBanner.png) no-repeat;
-    background-size: cover;
+}
+
+#banners img {
+    width: 100%;
+    height: 100%;
 }
 
 
-/* SESSÃO SERVIÇOS */
-#servicos {
-    padding: 30px 0;
-}
 
-#servicos .titulos{
+/*//////
+/* SESSÃO SERVIÇOS E PROJETOS */
+
+#servicos, #projetos {
     text-align: center;
+    justify-items: center;
+    color: #00FFF0;
+    margin: 2em 0 3em 0;
+    box-shadow: 2px 2px 50px 1px #0e0e0e;
 }
 
-#servicos .row img {
-    border: #008282 10px solid;
-    box-shadow: 3px 3px 10px #008282;
+
+.container-itens {
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas: "card card";
+    grid-gap: 2em;
+}
+
+.card {
+    background: url(../img/crua.png) no-repeat center;
+    background-size: cover;
+    color: #00FFF0;
+    grid-area: "card";
+    width: 450px;
+    height: 250px;
+    margin: 3em 1.5em;
+    border-radius: 0.5em;
+    border: #0e0e0e 1.5px solid;
+    box-shadow: 0.3px 0.3px 15px 1px #008282;
+}
+
+.card a {
+    background-color: #0e0e0e;
+    opacity: 0.7;
+    border-radius: 1em;
+    padding: 0.3em 1em;
+}
+
+.card-img-overlay{
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: end;
+}
+
+/*//////
+/* SESSÃO ISCA */
+
+#isca {
+    align-items: center;
+    color: #00FFF0;
+    margin: 7em 0;
+}
+
+#isca .container {
+    display: grid;
+    grid-template-areas: "text-isca imgs-isca";
+    background: url(../img/bg-isca.png) no-repeat center;
+    background-size: cover;
+    height: 300px;
+    padding: 2em 3em;
+    border-radius: 10px;    
+    border: 2px solid #00FFF0;
+    box-shadow: 0.3px 0.3px 15px 1px #00FFF0;
+}
+
+#isca .container .text-isca {
+    grid-area: "text-isca";
+    align-self: center;
+}
+
+#isca .container .imgs-isca {
+    grid-area: "imgs-isca";
+    align-self: center;
+}
+
+#isca .container img {
+    grid-area: "imgs-isca";
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 1em;
 }
 
 
-#servicos .row .botao{
-    background: url(../img/button-more.png) no-repeat center;
-    border: none;
+
+@media (max-width: 1200px) { 
+  
+    #isca .container {
+        display: grid;
+        grid-template-areas: 
+        "text-isca"
+        "imgs-isca";
+        height: 550px;
+        text-align: center;   
+    }
+
+    #isca .container .text-isca {
+        grid-area: "text-isca";
+        margin-bottom: 2em;
+    }
+
+    #isca .container .imgs-isca {
+        grid-area: "imgs-isca";
+        margin-bottom: 2em;
+    }
 }
+
+@media (max-width: 767.999px) { 
+  
+
+    #isca .container {
+        display: grid;
+        grid-template-areas: 
+        "text-isca"
+        "imgs-isca";
+        height: 630px;
+        width: 700px;
+        padding: 2em;
+        justify-content: center;
+    }
+
+    #isca .container .text-isca {
+        grid-area: "text-isca";
+        margin: 1em 6em 2em 6em;
+    }
+
+    #isca .container .imgs-isca {
+        grid-area: "imgs-isca";
+        grid-gap: 2em;
+    }
+
+    #isca .container img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+}
+
+
+
+
 
 
 /* SESSÃO SOBRE */
 
-#sobre {
+
+#sobre .container {
     background: #00FFF0;
+    display: flex;
+    max-width: 100%;
+    box-shadow: inset 2px 2px 50px 1px #0e0e0e;
 }
 
 .foto {
     background: #008282;
-}
-
-.sobre {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-
-
-/* SESSÃO PROJETOS */
-#projetos {
-    padding: 30px 0;
-}
-
-#projetos .titulos{
+    max-width: 520px;
     text-align: center;
 }
 
-#projetos .row img {
-    border: #008282 10px solid;
-    box-shadow: 3px 3px 10px #008282;
+#sobre .foto img {
+    min-width: 200px;
+    max-width: 270px;
+    margin: 3em 2em 2em 2em;
 }
 
-#projetos .row .botao{
-    background: url(../img/button-more.png) no-repeat center;
-    border: none;
+.minibio {
+    padding: 3.5em;
 }
 
-
-
-/* RODAPÉ */
-
-#rodape {
-    background: #008282;
-    padding-top: 20px;
+.minibio p {
+    margin: 1em 3em 3em 0;
 }
 
-#rodape .nav-item .nav-link{
-    color: #D9D9D9;
-    margin: 5px 0px;
-}
+@media (max-width: 800px) { 
+    #sobre .container {
+        flex-direction: column;
+    }
 
-#rodape .nav-link:hover {
-    color: #D9D9D9;
-    font-weight: bold;
-}
-
-#rodape h2 {
-    text-transform: uppercase;
-    color: #D9D9D9;
-}
-
-#rodape .titulos {
-    color: #D9D9D9;
-}
-
-.logo-rodape {
-    text-align: center;
-    background: #1E1E1E;
-    padding: 20px 0px;
-    margin-top: 10px;
+    .foto {
+        max-width: 100%;
+    }
 }
