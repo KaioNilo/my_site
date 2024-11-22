@@ -45,7 +45,13 @@ a:hover {
     font-weight: bold;
 }
 
+.navbar-toggler {
+    margin-right: 3em;
+}
 
+.navbar-toggler-icon {
+    background: url(../img/menu.svg) no-repeat center;
+}
 
 
 
