@@ -57,6 +57,54 @@
     align-items: end;
 }
 
+
+/* SESSÃO SOBRE */
+
+
+#sobre .container {
+    background: #00FFF0;
+    display: flex;
+    max-width: 100%;
+    box-shadow: inset 2px 2px 50px 1px #0e0e0e;
+}
+
+.foto {
+    background: #008282;
+    max-width: 520px;
+    text-align: center;
+    margin-left: 4em;
+}
+
+#sobre .foto img {
+    min-width: 200px;
+    max-width: 270px;
+    margin: 3em 2em 2em 2em;
+}
+
+.minibio {
+    padding: 3.5em;
+}
+
+.minibio p {
+    margin: 1em 3em 3em 0;
+}
+
+@media (max-width: 900px) { 
+    #sobre .container {
+        flex-direction: column;
+    }
+
+    .foto {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .minibio {
+        padding-left: 9em;
+    }
+}
+
+
 /*//////
 /* SESSÃO ISCA */
 
@@ -150,49 +198,4 @@
         border-radius: 10px;
     }
 
-}
-
-
-
-
-
-
-/* SESSÃO SOBRE */
-
-
-#sobre .container {
-    background: #00FFF0;
-    display: flex;
-    max-width: 100%;
-    box-shadow: inset 2px 2px 50px 1px #0e0e0e;
-}
-
-.foto {
-    background: #008282;
-    max-width: 520px;
-    text-align: center;
-}
-
-#sobre .foto img {
-    min-width: 200px;
-    max-width: 270px;
-    margin: 3em 2em 2em 2em;
-}
-
-.minibio {
-    padding: 3.5em;
-}
-
-.minibio p {
-    margin: 1em 3em 3em 0;
-}
-
-@media (max-width: 800px) { 
-    #sobre .container {
-        flex-direction: column;
-    }
-
-    .foto {
-        max-width: 100%;
-    }
 }
