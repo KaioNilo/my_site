@@ -110,22 +110,23 @@
     text-align: center;
     justify-items: center;
     color: #00FFF0;
-    margin: 2em 0 3em 0;
+    margin: 2em auto 3em auto;
+    max-width: 1200px;
+    overflow: hidden;
+    mask: linear-gradient(to right, transparent, #0e0e0e 15%, #0e0e0e 85%, transparent);
 }
 
-
-.container-itens {
-    max-width: 1200px;
-    display: grid;
-    grid-template-areas: "card card";
-    grid-gap: 2em;
+.scroll-container {
+    display: flex;
+    gap: 2em;
+    width: max-content;
+    animation: scroll 20s linear infinite;
 }
 
 .card {
     background: url(../img/crua.png) no-repeat center;
     background-size: cover;
     color: #00FFF0;
-    grid-area: "card";
     width: 450px;
     height: 250px;
     margin: 3em 1.5em;
@@ -146,6 +147,15 @@
     display: flex;
     align-items: end;
 }
+
+@keyframes scroll {
+    to {
+        translate: calc(-50% - 1em);
+    }
+}
+
+
+
 
 
 /* SESSÃO SOBRE */

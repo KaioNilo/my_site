@@ -31,3 +31,27 @@ function nextImg() {
 
     document.getElementById("radio" + count).checked = true;
 }
+
+////////////////////////////////////////////////////////////////
+/* SCROLL SERVIÇOS */
+
+let scrollServicos = document.querySelector("#servicos");
+let containerServicos = document.querySelector("#servicos .scroll-container");
+let filhosServicos = Array.from(containerServicos.children);
+
+filhosServicos.forEach(item => {
+    let duplicado = item.cloneNode(true);
+    containerServicos.appendChild(duplicado);
+});
+
+
+/* SCROLL PROJETOS */
+
+let scrollProjetos = document.querySelector("#projetos");
+let containerProjetos = document.querySelector("#projetos .scroll-container");
+let filhosProjetos = Array.from(containerProjetos.children);
+
+filhosProjetos.forEach(item => {
+    let duplicado2 = item.cloneNode(true);
+    containerProjetos.appendChild(duplicado2);
+});
