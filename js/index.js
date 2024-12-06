@@ -52,6 +52,6 @@ let containerProjetos = document.querySelector("#projetos .scroll-container");
 let filhosProjetos = Array.from(containerProjetos.children);
 
 filhosProjetos.forEach(item => {
-    let duplicado2 = item.cloneNode(true);
-    containerProjetos.appendChild(duplicado2);
+    let duplicado = item.cloneNode(true);
+    containerProjetos.appendChild(duplicado);
 });

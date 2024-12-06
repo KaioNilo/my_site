@@ -65,6 +65,10 @@
     margin-left: -75%;
 }
 
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+
 #navegacao-auto div{
     border: 2px solid #008282;
     padding: 5px;
@@ -101,6 +105,10 @@
     background: #00FFF0;
 }
 
+#radio5:checked ~ #navegacao-auto .auto-btn5 {
+    background: #00FFF0;
+}
+
 
 
 /*//////
@@ -118,9 +126,9 @@
 
 .scroll-container {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     width: max-content;
-    animation: scroll 20s linear infinite;
+    animation: scroll 15s linear infinite;
 }
 
 .card {
@@ -165,7 +173,7 @@
     background: #00FFF0;
     display: flex;
     max-width: 100%;
-    box-shadow: inset 2px 2px 50px 1px #0e0e0e;
+    box-shadow: inset 0px 0px 10px 0px #008282;
 }
 
 .foto {
@@ -202,100 +210,4 @@
     .minibio {
         padding-left: 9em;
     }
-}
-
-
-/*//////
-/* SESSÃO ISCA */
-
-#isca {
-    align-items: center;
-    color: #00FFF0;
-    margin: 7em 0;
-}
-
-#isca .container {
-    display: grid;
-    grid-template-areas: "text-isca imgs-isca";
-    background: url(../img/bg-isca.png) no-repeat center;
-    background-size: cover;
-    height: 300px;
-    padding: 2em 3em;
-    border-radius: 10px;    
-    border: 2px solid #00FFF0;
-    box-shadow: 0.3px 0.3px 15px 1px #00FFF0;
-}
-
-#isca .container .text-isca {
-    grid-area: "text-isca";
-    align-self: center;
-}
-
-#isca .container .imgs-isca {
-    grid-area: "imgs-isca";
-    align-self: center;
-}
-
-#isca .container img {
-    grid-area: "imgs-isca";
-    width: 250px;
-    height: 200px;
-    border-radius: 10px;
-    margin-left: 1em;
-}
-
-
-
-@media (max-width: 1200px) { 
-  
-    #isca .container {
-        display: grid;
-        grid-template-areas: 
-        "text-isca"
-        "imgs-isca";
-        height: 550px;
-        text-align: center;   
-    }
-
-    #isca .container .text-isca {
-        grid-area: "text-isca";
-        margin-bottom: 2em;
-    }
-
-    #isca .container .imgs-isca {
-        grid-area: "imgs-isca";
-        margin-bottom: 2em;
-    }
-}
-
-@media (max-width: 767.999px) { 
-  
-
-    #isca .container {
-        display: grid;
-        grid-template-areas: 
-        "text-isca"
-        "imgs-isca";
-        height: 630px;
-        width: 700px;
-        padding: 2em;
-        justify-content: center;
-    }
-
-    #isca .container .text-isca {
-        grid-area: "text-isca";
-        margin: 1em 6em 2em 6em;
-    }
-
-    #isca .container .imgs-isca {
-        grid-area: "imgs-isca";
-        grid-gap: 2em;
-    }
-
-    #isca .container img {
-        width: 200px;
-        height: 150px;
-        border-radius: 10px;
-    }
-
 }
