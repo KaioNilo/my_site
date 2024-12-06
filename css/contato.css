@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+    color: #00FFF0;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-family: "Funnel Display", "Rockweel",  sans-serif;
+}
+
+#contatos{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: -4em;
+}
+
+.contato {
+    color: #d9d9d9;
+    font-size: larger;
+    margin-bottom: 1em;
+}
+
+.contato:hover {
+    color: #00FFF0;
+}
+
+.contato img {
+    margin-right: 0.5em;
+    width: 50px;
+    height: 50px;
+}
+
